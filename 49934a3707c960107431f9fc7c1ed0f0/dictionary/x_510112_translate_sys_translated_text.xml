@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="sys_translated_text" max_length="40" name="x_510112_translate_sys_translated_text" sizeclass="0" type="collection">
+        <element label="Document Sys ID" max_length="32" name="documentkey" type="string"/>
+        <element label="Field Name" max_length="100" name="fieldname" type="string"/>
+        <element label="Language" max_length="10" name="language" type="string"/>
+        <element label="Table Name" max_length="100" name="tablename" type="string"/>
+        <element label="To be Translated" max_length="10000" name="to_be_translated" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Translation Master" max_length="32" name="translation_master" reference="x_510112_translate_master" type="reference"/>
+        <element label="Value" max_length="10000" name="value" type="string"/>
+        <index name="index">
+            <element name="translation_master"/>
+        </index>
+    </element>
+</database>

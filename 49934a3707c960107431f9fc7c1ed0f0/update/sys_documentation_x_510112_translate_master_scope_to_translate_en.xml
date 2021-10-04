@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="scope_to_translate" label="Scope to Translate" language="en" table="x_510112_translate_master">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>scope_to_translate</element>
+            <help/>
+            <hint/>
+            <label>Scope to Translate</label>
+            <language>en</language>
+            <name>x_510112_translate_master</name>
+            <plural>Scope to Translates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-19 21:59:15</sys_created_on>
+            <sys_id>7af8023b07c960107431f9fc7c1ed089</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Scope to Translate</sys_name>
+            <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+            <sys_update_name>sys_documentation_x_510112_translate_master_scope_to_translate_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-19 21:59:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

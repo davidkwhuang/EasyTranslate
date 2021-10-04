@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_510112_translate.ETUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ETUtils</name>
+        <script><![CDATA[var ETUtils = Class.create();
+ETUtils.prototype = {
+    initialize: function() {},
+
+    createTemplate: function(grMaster, translateTable, table) {
+        if (translateTable == "sys_ui_message") {
+            this._uiMessage(grMaster);
+        }
+
+        if (translateTable == "sys_choice") {
+            this._sysChoice(grMaster);
+        }
+
+        if (translateTable == "sys_documentation") {
+            this._sysDocumentation(grMaster);
+        }
+
+        if (translateTable == "sys_translated") {
+            this._sysTranslated(grMaster);
+        }
+
+        if (translateTable == "sys_translated_text") {
+            this._sysTranslatedText(grMaster, table);
+        }
+    },
+
+    _uiMessage: function(grMaster) {
+        var grUIMessage = new GlideRecord('x_510112_translate_sys_ui_message');
+        var grSysUIMessage = new GlideRecord('sys_ui_message');
+        grSysUIMessage.addEncodedQuery(grMaster.filter);
+        grSysUIMessage.query();
+        while (grSysUIMessage.next()) {
+            grUIMessage.initialize();
+            grUIMessage.key = grSysUIMessage.getValue("key");
+            grUIMessage.application = grSysUIMessage.getValue("application");
+            grUIMessage.language = grMaster.getValue("language");
+            grUIMessage.translation_master = grMaster.getValue("sys_id");
+            grUIMessage.translate_message = grSysUIMessage.getValue("message");
+            grUIMessage.insert();
+        }
+    },
+
+
+    _sysDocumentation: function(grMaster) {
+        var grDocumentation = new GlideRecord('x_510112_translate_sys_documentation');
+        var grSysdocumentation = new GlideRecord('sys_documentation');
+        grSysdocumentation.addEncodedQuery(grMaster.filter);
+
+        if (grMaster.exclude_system == true) {
+            grSysdocumentation.addEncodedQuery("elementNOT LIKEsys_");
+        }
+        grSysdocumentation.query();
+        while (grSysdocumentation.next()) {
+            grDocumentation.initialize();
+            grDocumentation.translation_master = grMaster.getValue("sys_id");
+            grDocumentation.element = grSysdocumentation.getValue("element");
+            grDocumentation.table = grSysdocumentation.getValue("name");
+            grDocumentation.hint = grSysdocumentation.getValue("hint");
+            grDocumentation.url_target = grSysdocumentation.getValue("application");
+            grDocumentation.url = grSysdocumentation.getValue("url");
+            grDocumentation.help = grSysdocumentation.getValue("help");
+            grDocumentation.text_to_be_translated = grSysdocumentation.getValue("label");
+            grDocumentation.language = grMaster.getValue("language");
+            grDocumentation.insert();
+        }
+    },
+
+    _sysTranslated: function(grMaster) {
+        var grsysTranslated = new GlideRecord('x_510112_translate_sys_translated');
+        var grGetFields = new GlideRecord('sys_dictionary');
+        grGetFields.addEncodedQuery("internal_type=translated_field");
+        if (!grMaster.table_to_translate.nil()) {
+            grGetFields.addQuery('name', grMaster.table_to_translate);
+        }
+        grGetFields.query();
+        while (grGetFields.next()) {
+            var grGetData = new GlideRecord(grGetFields.name);
+            if (!grMaster.scope_to_translate.nil()) {
+                grGetData.addQuery('sys_scope', grMaster.scope_to_translate);
+            }
+
+            if (!grMaster.filter.nil()) {
+                grGetData.addEncodedQuery(grMaster.filter);
+            }
+
+
+            grGetData.query();
+            while (grGetData.next()) {
+				if (grGetData.getValue(grGetFields.element)) {
+                grsysTranslated.initialize();
+                grsysTranslated.language = grMaster.getValue("language");
+                grsysTranslated.translation_master = grMaster.getValue("sys_id");
+                grsysTranslated.element = grGetFields.getValue("element");
+                grsysTranslated.table = grGetFields.getValue("name");
+                grsysTranslated.value = grGetData.getValue(grGetFields.element);
+                grsysTranslated.insert();
+				}
+            }
+        }
+    },
+    _sysChoice: function(grMaster) {
+        var grSysChoice = new GlideRecord('x_510112_translate_sys_choice');
+        var grChoice = new GlideRecord('sys_choice');
+        grChoice.addEncodedQuery(grMaster.filter);
+        grChoice.query();
+        while (grChoice.next()) {
+            grSysChoice.initialize();
+            grSysChoice.value = grChoice.getValue("value");
+            grSysChoice.element = grChoice.getValue("element");
+            grSysChoice.dependent_value = grChoice.getValue("dependent_value");
+            grSysChoice.translation_master = grMaster.getValue("sys_id");
+            grSysChoice.translate_message = grChoice.getValue("label");
+            grSysChoice.table = grChoice.getValue("name");
+            grSysChoice.sequence = grChoice.getValue("sequence");
+            grSysChoice.hint = grChoice.getValue("hint");
+            grSysChoice.language = grMaster.getValue("language");
+            grSysChoice.inactive = grChoice.getValue("inactive");
+            grSysChoice.insert();
+        }
+    },
+
+    _sysTranslatedText: function(grMaster, table) {
+        var fields = grMaster.fields.toString();
+        var arrField = fields.split(",");
+        var grTT = new GlideRecord('x_510112_translate_sys_translated_text');
+        for (var i = 0; i < arrField.length; i++) {
+            var grSysTT = new GlideRecord(table);
+            grSysTT.addEncodedQuery(grMaster.filter);
+            grSysTT.query();
+            while (grSysTT.next()) {
+                grTT.initialize();
+                grTT.to_be_translated = grSysTT.getValue(arrField[i]);
+                grTT.tablename = grMaster.getValue("table_to_translate");
+                grTT.documentkey = grSysTT.getValue("sys_id");
+                grTT.translation_master = grMaster.getValue("sys_id");
+                grTT.language = grMaster.getValue("language");
+                grTT.fieldname = arrField[i];
+
+                grTT.insert();
+            }
+        }
+
+    },
+
+    getRefQualField: function(grMaster) {
+        return "internal_type=translated^ORinternal_type=translated_field^ORinternal_type=translated_html^ORinternal_type=translated_text^name=" + grMaster.table_to_translate;
+    },
+
+    type: 'ETUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-21 13:51:22</sys_created_on>
+        <sys_id>754c26940711e0107431f9fc7c1ed048</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>ETUtils</sys_name>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_update_name>sys_script_include_754c26940711e0107431f9fc7c1ed048</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-03 11:02:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="sys_choice" max_length="40" name="x_510112_translate_sys_choice" sizeclass="0" type="collection">
+        <element label="Dependent Value" max_length="10" name="dependent_value" type="string"/>
+        <element label="Element" max_length="100" name="element" type="string"/>
+        <element label="Hint" max_length="10000" name="hint" type="string"/>
+        <element label="Inactive" max_length="100" name="inactive" type="string"/>
+        <element label="Label" max_length="10000" name="label" type="string"/>
+        <element label="Language" max_length="100" name="language" type="string"/>
+        <element label="Sequence" max_length="10" name="sequence" type="string"/>
+        <element label="Table" max_length="100" name="table" type="string"/>
+        <element label="Message to be translated" max_length="10000" name="translate_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Translation Master" max_length="32" name="translation_master" reference="x_510112_translate_master" type="reference"/>
+        <element label="Value" max_length="100" name="value" type="string"/>
+        <index name="index">
+            <element name="translation_master"/>
+        </index>
+    </element>
+</database>
