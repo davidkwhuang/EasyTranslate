@@ -4,13 +4,13 @@
             <element>scope_to_translate</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-01-03 10:35:15</sys_created_on>
-            <sys_id>294cf8a407216c107431f9fc7c1ed0d1</sys_id>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>2076832d1b033010d0c9c805604bcb85</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-03 10:35:15</sys_updated_on>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,83 @@
             <element>table_to_translate</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-01-03 10:35:15</sys_created_on>
-            <sys_id>a94cf8a407216c107431f9fc7c1ed0d1</sys_id>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>e476832d1b033010d0c9c805604bcb85</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-03 10:35:15</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>filter</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-01-03 10:35:15</sys_created_on>
-            <sys_id>2d4cf8a407216c107431f9fc7c1ed0d1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-03 10:35:15</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>fields</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-01-03 10:35:15</sys_created_on>
-            <sys_id>ad4cf8a407216c107431f9fc7c1ed0d1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-03 10:35:15</sys_updated_on>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-01-03 10:35:15</sys_created_on>
-            <sys_id>214cf8a407216c107431f9fc7c1ed0d2</sys_id>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>6876832d1b033010d0c9c805604bcb85</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-03 10:35:15</sys_updated_on>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>exclude_system</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-01-03 10:35:15</sys_created_on>
-            <sys_id>a14cf8a407216c107431f9fc7c1ed0d2</sys_id>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>e876832d1b033010d0c9c805604bcb85</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-03 10:35:15</sys_updated_on>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>6c76832d1b033010d0c9c805604bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>filter</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>ec76832d1b033010d0c9c805604bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fields</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-07 08:58:12</sys_created_on>
+            <sys_id>6076832d1b033010d0c9c805604bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Table Information" display_value="Table Information" name="x_510112_translate_master" sys_domain="global" view="Default view">4ad8a8a40755e0107431f9fc7c1ed0b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-07 08:58:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
