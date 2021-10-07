@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>sys_ui_message</name>
+        <order>100</order>
+        <roles>admin</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-20 16:17:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e05446800755a0107431f9fc7c1ed080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_update_name>sys_app_application_e05446800755a0107431f9fc7c1ed080</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-20 16:17:21</sys_updated_on>
+        <title>sys_ui_message</title>
+        <view_name/>
+    </sys_app_application>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</application>
+        <file_path/>
+        <instance_id>a6f8702cdb4c7c10d5c911f8489619a3</instance_id>
+        <instance_name>dev113712</instance_name>
+        <name>sys_app_application_e05446800755a0107431f9fc7c1ed080</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>sys_ui_message</name>
+        <order>100</order>
+        <roles>admin</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-20 16:17:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e05446800755a0107431f9fc7c1ed080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_update_name>sys_app_application_e05446800755a0107431f9fc7c1ed080</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-20 16:17:21</sys_updated_on>
+        <title>sys_ui_message</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>]]></payload>
+        <payload_hash>-1051042137</payload_hash>
+        <record_name>sys_ui_message</record_name>
+        <reverted_from/>
+        <source>f920cb651b033010d0c9c805604bcbf8</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-07 08:30:55</sys_created_on>
+        <sys_id>4d3043a51b033010d0c9c805604bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c59e078fe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-07 08:30:55</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>0d3043a5880330104be11f56cd77394e</update_guid>
+        <update_guid_history>0d3043a5880330104be11f56cd77394e:-1051042137</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sys_ui_message">fd3f83e11b433010d0c9c805604bcba4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-07 09:36:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>f5234f264c8546a4a08f55273bf10610</sys_id>
+        <sys_metadata>e05446800755a0107431f9fc7c1ed080</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_ui_message</sys_name>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_scope_delete display_value="">50c50b5e248641408fd1eb4949649039</sys_scope_delete>
+        <sys_update_name>sys_app_application_e05446800755a0107431f9fc7c1ed080</sys_update_name>
+        <sys_update_version display_value="sys_app_application_e05446800755a0107431f9fc7c1ed080">4d3043a51b033010d0c9c805604bcb4e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-07 09:36:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
