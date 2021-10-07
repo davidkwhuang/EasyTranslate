@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="sys_ui_message" max_length="40" name="x_510112_translate_sys_ui_message" sizeclass="0" type="collection">
+        <element label="Application" max_length="100" name="application" type="string"/>
+        <element label="key" max_length="100" name="key" type="string"/>
+        <element label="language" max_length="10" name="language" type="string"/>
+        <element label="Message" max_length="10000" name="message" type="string"/>
+        <element label="Message to be translated" max_length="10000" name="translate_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Translation Master" max_length="32" name="translation_master" reference="x_510112_translate_master" type="reference"/>
+        <index name="index">
+            <element name="translation_master"/>
+        </index>
+    </element>
+</database>

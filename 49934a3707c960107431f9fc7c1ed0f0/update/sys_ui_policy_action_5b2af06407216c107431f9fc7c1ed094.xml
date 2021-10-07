@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>scope_to_translate</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-03 10:26:45</sys_created_on>
+        <sys_id>5b2af06407216c107431f9fc7c1ed094</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scope_to_translate</sys_name>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5b2af06407216c107431f9fc7c1ed094</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-03 10:26:45</sys_updated_on>
+        <table>x_510112_translate_master</table>
+        <ui_policy display_value="Hide fields for sys_translated">de09342407216c107431f9fc7c1ed076</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

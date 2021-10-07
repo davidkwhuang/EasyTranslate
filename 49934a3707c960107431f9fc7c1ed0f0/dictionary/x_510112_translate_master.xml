@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Master Translation" max_length="40" name="x_510112_translate_master" sizeclass="0" type="collection">
+        <element label="Additional Fields" max_length="100" name="additional_fields" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="true" label="Exclude System Fields" max_length="40" name="exclude_system" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,is_multi_text=false" dependent="table_to_translate" dependent_on_field="table_to_translate" label="Fields" max_length="4000" name="fields" reference_qual="javascript: new ETUtils().getRefQualField(current);" type="field_list" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" dependent="table_to_translate" dependent_on_field="table_to_translate" label="Filter" max_length="4000" name="filter" type="conditions" use_dependent_field="true"/>
+        <element label="Translate to" max_length="10" name="language" type="string"/>
+        <element display="true" label="Name" max_length="200" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Scope to Translate" max_length="32" name="scope_to_translate" reference="sys_scope" type="reference"/>
+        <element attributes="base_start=true,edge_encryption_enabled=true" label="Table to translate" max_length="80" name="table_to_translate" type="table_name"/>
+        <element label="Translate From" max_length="10" name="translate_from" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="sys_choice" sequence="1" value="sys_choice"/>
+                <element inactive_on_update="false" label="sys_translated" sequence="2" value="sys_translated"/>
+                <element inactive_on_update="false" label="sys_ui_message" sequence="3" value="sys_ui_message"/>
+                <element inactive_on_update="false" label="sys_documentation" sequence="4" value="sys_documentation"/>
+                <element inactive_on_update="false" label="sys_translated_text" sequence="4" value="sys_translated_text"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="scope_to_translate"/>
+        </index>
+    </element>
+</database>

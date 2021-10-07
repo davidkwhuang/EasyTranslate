@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-19 21:44:43</sys_created_on>
+        <sys_id>cea58e7707c960107431f9fc7c1ed02e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_510112_translate_master.admin</sys_name>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_security_acl display_value="x_510112_translate_master">46a58e7707c960107431f9fc7c1ed02c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_cea58e7707c960107431f9fc7c1ed02e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-19 21:44:43</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

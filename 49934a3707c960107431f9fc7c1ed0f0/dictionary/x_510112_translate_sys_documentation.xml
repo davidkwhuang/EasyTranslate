@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="sys_documentation" max_length="40" name="x_510112_translate_sys_documentation" sizeclass="0" type="collection">
+        <element label="Element" max_length="100" name="element" type="string"/>
+        <element label="Help" max_length="4000" name="help" type="string"/>
+        <element label="Hint" max_length="4000" name="hint" type="string"/>
+        <element label="Label" max_length="10000" name="label" type="string"/>
+        <element label="Language" max_length="10" name="language" type="string"/>
+        <element label="Plural" max_length="10000" name="plural" type="string"/>
+        <element label="Table" max_length="100" name="table" type="string"/>
+        <element label="Text to be translated" max_length="10000" name="text_to_be_translated" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Translation Master" max_length="32" name="translation_master" reference="x_510112_translate_master" type="reference"/>
+        <element label="URL" max_length="1000" name="url" type="string"/>
+        <element label="URL Target" max_length="1000" name="url_target" type="string"/>
+        <index name="index">
+            <element name="translation_master"/>
+        </index>
+    </element>
+</database>

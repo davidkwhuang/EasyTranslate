@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Easy Translate">61d143291b033010d0c9c805604bcbe4</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Master Translations</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_510112_translate_master</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-07 08:39:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cef107291b033010d0c9c805604bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Master Translations</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_update_name>sys_app_module_cef107291b033010d0c9c805604bcb37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-07 08:39:18</sys_updated_on>
+        <timeline_page/>
+        <title>Master Translations</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

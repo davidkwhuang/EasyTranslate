@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_510112_translate.sys_documentation_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>sys_documentation_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-30 19:04:28</sys_created_on>
+        <sys_id>397a825f0791a8107431f9fc7c1ed09c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_510112_translate.sys_documentation_user</sys_name>
+        <sys_package display_value="Easy Translate" source="x_510112_translate">49934a3707c960107431f9fc7c1ed0f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Easy Translate">49934a3707c960107431f9fc7c1ed0f0</sys_scope>
+        <sys_update_name>sys_user_role_397a825f0791a8107431f9fc7c1ed09c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-30 19:04:28</sys_updated_on>
+    </sys_user_role>
+</record_update>
